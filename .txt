@@ -1,0 +1,36 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// function increment (){
+//     let count =0
+    
+//     return function (){
+//         count++
+//         return count
+//     }
+    
+// }
+
+// const value = increment()
+// console.log(value())
+// console.log(value())
+
+const Counter = (function (){
+  let count =0
+  return {
+     increment : function (){
+        count++ 
+        console.log(count)
+     },
+     reset : function (){
+         count =0
+         console.log('counter reset')
+     }
+  }
+  
+})()
+
+
+Counter.increment()
+Counter.increment()
+Counter.reset() 
